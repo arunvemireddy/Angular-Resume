@@ -1,0 +1,41 @@
+#intro-example {
+    height: 400px;
+    
+  }
+
+  /* Height for devices larger than 992px */
+  @media (min-width: 900px) {
+    #intro-example {
+      height: 600px;
+     
+    }
+}
+
+.image{
+  transition: transform .4s;
+}
+
+.image:hover {
+  transform: scale(4.5);
+}
+
+.nav-link{
+  font-family: Source Sans Pro;
+  font-weight: lighter;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.nav-link::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.1s ease;
+}
+
+.nav-link:hover::after{
+  width: 100%;
+  transition: width .3s;
+}

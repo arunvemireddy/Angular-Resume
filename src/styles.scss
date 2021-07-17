@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+body, html {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+
+  }
+
+@import "~bootstrap/dist/css/bootstrap.css";  
+
+@import "~bootstrap/dist/css/bootstrap.min.css"; 
+
+// @import "~bootstrap/dist/js/bootstrap.js"; 
+
+// @import "~bootstrap/dist/js/bootstrap.min.js"; 
+
+@import "~font-awesome/css/font-awesome.css";
+
+@import '~ngx-toastr/toastr';
+
+

@@ -1,0 +1,122 @@
+#intro-example {
+    height: 400px;
+    
+  }
+
+  /* Height for devices larger than 992px */
+  @media (min-width: 900px) {
+    #intro-example {
+      height: 600px;
+     
+    }
+}
+
+h2{
+  position: relative;
+  margin: 20px 0 0;
+  color: #fff;
+  z-index: 1;
+  overflow: hidden;
+}
+// h2 span:nth-child(2){
+//   color: #da8609;
+// }
+
+// h2 span:nth-child(3){
+//   color: #da8609;
+// }
+
+.buttonClass{
+
+}
+
+.outer{
+ position: relative;
+  margin: 0 50px;
+  background: linear-gradient(#14ffe9,#ffeb3b,#ff00e0);
+ 
+}
+
+.button{
+  height: 70px;
+  width: 220px;
+  border-radius: 50px;
+}
+
+.outer a ,.outer span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.outer a{
+  background: #111;
+  color: #f2f2f2;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  border-radius: 50px;
+  z-index: 1;
+  
+}
+
+.button a{
+height: 65px;
+width: 215px;
+text-decoration: none;
+border: none;
+outline: none;
+}
+
+.outer span{
+  height: 100%;
+  width: 100%;
+  background: inherit;
+}
+
+.button span{
+  border-radius: 50px;
+}
+
+.outer span:nth-child(1){
+  filter: blur(7px);
+}
+
+.outer{
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+
+.headtwo span{
+  position: relative;
+  background: black;
+}
+
+.headtwo span::after{
+  content: "";
+  position: absolute;
+  background: rgb(12, 12, 12);
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid white;
+  color: white;
+  animation: typing 1.5s steps(10) infinite;
+}
+
+@keyframes typing {
+  100%{
+    left: 110%;
+   // margin: 0 -35px 0 -35px;
+  }
+}
+

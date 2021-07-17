@@ -30,7 +30,10 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -66,7 +69,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "DemoUI:build"
+            "browserTarget": "DemoUI:build",
+            "port": 5200
           },
           "configurations": {
             "production": {
@@ -123,6 +127,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "DemoUI"
+    }
+  },
+  "defaultProject": "DemoUI",
+  "cli": {
+    "analytics": "4633e322-183e-4a7c-83ef-d976bf4b6ff2"
+  }
 }
